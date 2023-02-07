@@ -21,6 +21,12 @@ test('Throws on 7', () => {
     expect(() => {fibonacci.init(7);
     }).toThrow();
   });
+
+test('Throws an error as Fibonacci sequence needs a previous number', () => {
+    fibonacci.init(0);
+    expect(() => {fibonacci.init(0);
+    }).toThrow();
+  });
   
 test('When initialized the next number can be returned', () => {
     fibonacci.init(8);
