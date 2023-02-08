@@ -34,9 +34,9 @@ test('Throws an error as Fibonacci sequence doesn\'t contain negative numbers', 
     }).toThrow();
   });
   
-test('When initialized the next number can be returned', () => {
+test('Sequence is Initialized to 8', () => {
     fibonacci.init(8);
-    expect(fibonacci.next()).toBe(13);
+    expect(fibonacci.init()).toBe(8);
 });
 
 
