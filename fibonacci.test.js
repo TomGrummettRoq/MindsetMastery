@@ -27,9 +27,16 @@ test('Throws an error as Fibonacci sequence needs a previous number', () => {
     expect(() => {fibonacci.init(0);
     }).toThrow();
   });
+
+test('Throws an error as Fibonacci sequence doesn\'t contain negative numbers', () => {
+    fibonacci.init(2);
+    expect(() => {fibonacci.skip(-1);
+    }).toThrow();
+  });
   
 test('When initialized the next number can be returned', () => {
     fibonacci.init(8);
     expect(fibonacci.next()).toBe(13);
 });
+
 
