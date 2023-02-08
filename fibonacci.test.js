@@ -16,15 +16,18 @@ test('When initialized, the 5th number along the sequence can be returned', () =
     expect(fibonacci.skip(5)).toBe(21);
 });
 
-test('Throws on 7', () => {
-    fibonacci.init(7);
+test('Throws on 7 as 7 isn\'t a Fibonacci Number', () => {
     expect(() => {fibonacci.init(7);
     }).toThrow();
   });
 
 test('Throws an error as Fibonacci sequence needs a previous number', () => {
-    fibonacci.init(0);
     expect(() => {fibonacci.init(0);
+    }).toThrow();
+  });
+
+test('Throws an error as Fibonacci sequence must start with an integer', () => {
+    expect(() => {fibonacci.init(1.5);
     }).toThrow();
   });
 
