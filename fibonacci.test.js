@@ -38,5 +38,6 @@ test('Sequence is Initialized to 8', () => {
     fibonacci.init(8);
     expect(fibonacci.init()).toBe(8);
 });
+  
 
 
