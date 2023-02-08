@@ -28,26 +28,8 @@ test('Throws an error as Fibonacci sequence needs a previous number', () => {
     }).toThrow();
   });
   
-// test('When initialized the next number can be returned', () => {
-//     fibonacci.init(8);
-//     expect(fibonacci.next()).toBe(13);
-// });
-
-// test('When initialized the next number can be returned', () => {
-//     fibonacci.init(8);
-//     expect(fibonacci.next()).toBe(13);
-// });
-
-// test('When initialized the next number can be returned', () => {
-//     fibonacci.init(8);
-//     expect(fibonacci.next()).toBe(13);
-// });
-
-// test('When initialized the next number can be returned', () => {
-//     fibonacci.init(8);
-//     expect(fibonacci.next()).toBe(13);
-// });
-
-
-
+test('When initialized the next number can be returned', () => {
+    fibonacci.init(8);
+    expect(fibonacci.next()).toBe(13);
+});
 
