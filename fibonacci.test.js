@@ -53,21 +53,22 @@ test('Throws an error as Fibonacci sequence must start with an integer', () => {
     fibonacci.next();
     fibonacci.next();
     
-      expect(fibonacci.next()).toBe(5);
-    });
+    expect(fibonacci.next()).toBe(5);
+  });
     
-    test('Testing init seed reset', () => {
-      fibonacci.init(2);
-      fibonacci.init(13);
-      fibonacci.init(5);
-      
-      expect(fibonacci.current).toBe(5);
-    });
+  test('Testing init seed reset', () => {
+    fibonacci.init(2);
+    fibonacci.init(13);
+    fibonacci.init(5);
     
-    test('Undeclared Seed Number', () => {
-      expect(() => {fibonacci.init();
-      }).toThrow();
-    });
-    
-    
-    
+    expect(fibonacci.current).toBe(5);
+  });
+  
+  test('Undeclared Seed Number', () => {
+    expect(() => {fibonacci.init();
+    }).toThrow();
+  });
+  
+  
+  
+  
